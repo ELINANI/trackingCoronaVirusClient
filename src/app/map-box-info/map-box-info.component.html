@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<br>
+<h4>Traking Corona Virus</h4>
+<div class="allCas">
+    <span>{{service.getAllCas.nom}} :</span>
+    <span>{{service.getAllCas.nombre}}</span>
+</div>
+<br>
+<ul>
+   <li>
+     <div class="allCasHomme">
+        <span>{{service.GetHommeCas.nom}} :</span>
+       <span>{{service.GetHommeCas.nombre}}</span>
+      </div> 
+   </li>
+    <li>
+     <div class="allCasFemme">
+        <span>{{service.GetFemmeCas.nom}} :</span>
+       <span>{{service.GetFemmeCas.nombre}}</span>
+      </div> 
+   </li>
+</ul>
+<br>
+<ul>
+   <li>
+     <div class="allCasEnfant">
+        <span>{{service.GetEnfantCas.nom}} :</span>
+       <span>{{service.GetEnfantCas.nombre}}</span>
+      </div> 
+   </li>
+    <li>
+     <div class="allCasVieux">
+        <span>{{service.GetVieuxCas.nom}} :</span>
+       <span>{{service.GetVieuxCas.nombre}}</span>
+      </div> 
+   </li>
+</ul>
+<br>
+<input  type="text" class="form-control" [(ngModel)]="filter" placeholder="Search..."  (input)="search()"/>
+<br>
+<div class="table-box">
+  <table class="table-bordered table-hover">
+      <tr>
+          <td>Quartier</td>
+          <td>Nombre</td>
+      </tr>
+      <tr *ngFor="let quartier of mapBox.mapBox">
+          <td style=" font-family: 'Ribeye';">{{quartier.nom}}</td>
+          <td style=" font-size:30px ;">{{quartier.nombreCas}}</td>
+      </tr>
+  </table>    
+</div>
+</body>
+</html>
+

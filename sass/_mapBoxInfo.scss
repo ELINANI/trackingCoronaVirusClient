@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Ribeye&display=swap');
+$fontFamily :'Ribeye';
+$fontColor:'#FFA355';
+$backGroundColor :'#3C3258';
+body{
+    background-color: $backGroundColor;
+    text-align: center;
+}
+.allCas{
+    margin-top: 20px;
+    
+}
+h4{
+    color: $fontColor;
+    font-family: $fontFamily ;
+}
+.allCas span:first-of-type{
+    font-size: 18px ;
+    font-family: $fontFamily;
+    
+}
+.allCas span:last-of-type{
+    font-size:  30px ;
+    margin-left: 10px;
+    color: tomato;
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-family: $fontFamily;
+}
+ul li .allCasHomme{
+    margin-left: 10px;
+}
+ul li .allCasHomme span:last-of-type{
+    color: $fontColor;
+    margin-left: 10px;
+}
+ul li .allCasFemme{
+    margin-left: 30px;
+}
+ul li .allCasFemme span:last-of-type{
+    color:$fontColor;
+    margin-left: 10px;
+}
+
+ul li .allCasEnfant{
+    margin-left: 10px;
+}
+ul li .allCasEnfant span:last-of-type{
+    color: $fontColor;
+    margin-left: 10px;
+}
+ul li .allCasVieux{
+    margin-left: 30px;
+}
+ul li .allCasVieux span:last-of-type{
+    color:$fontColor;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+}
+table tr:first-of-type td{
+    color: $fontColor;
+    font-family: $fontFamily;
+    text-align: center;
+    letter-spacing: 4px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $fontColor;
+    width: 300px;
+}
+input:focus{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #0f0;
+    width: 300px;
+}

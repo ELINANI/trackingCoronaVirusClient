@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Ribeye&display=swap');
+body{
+    background-color: #3C3258;
+    text-align: center;
+}
+.allCas{
+    margin-top: 20px;
+    
+}
+h4{
+    color: #FFA355;
+    font-family: 'Ribeye';
+}
+.allCas span:first-of-type{
+    font-size: 18px ;
+    font-family: 'Ribeye';
+    
+}
+.allCas span:last-of-type{
+    font-size:  30px ;
+    margin-left: 10px;
+    color: tomato;
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-family: 'Ribeye';
+}
+ul li .allCasHomme{
+    margin-left: 10px;
+}
+ul li .allCasHomme span:last-of-type{
+    color: #FFA355;
+    margin-left: 10px;
+}
+ul li .allCasFemme{
+    margin-left: 30px;
+}
+ul li .allCasFemme span:last-of-type{
+    color: #FFA355;
+    margin-left: 10px;
+}
+
+ul li .allCasEnfant{
+    margin-left: 10px;
+}
+ul li .allCasEnfant span:last-of-type{
+    color: #FFA355;
+    margin-left: 10px;
+}
+ul li .allCasVieux{
+    margin-left: 30px;
+}
+ul li .allCasVieux span:last-of-type{
+    color: #FFA355;
+    margin-left: 10px;
+}
+
+table {
+    width: 90%;
+    height: 400px;
+    overflow-y:scroll;
+   
+}
+table tr:first-of-type td{
+    color: #FFA355;
+    font-family: 'Ribeye';
+    text-align: center;
+    letter-spacing: 4px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #FFA355;
+    width: 300px;
+}
+input:focus{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #0f0;
+    width: 300px;
+}
+.table-box{
+    overflow-y: scroll;
+    height: 550px;
+    
+}
